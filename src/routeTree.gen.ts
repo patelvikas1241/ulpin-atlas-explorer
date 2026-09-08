@@ -14,6 +14,7 @@ import { Route as AddRouteImport } from './routes/add'
 import { Route as AnalyticsRouteImport } from './routes/analytics'
 import { Route as MapRouteImport } from './routes/map'
 import { Route as SearchRouteImport } from './routes/search'
+import { Route as SettingsRouteImport } from './routes/settings'
 import { Route as PropertiesIndexRouteImport } from './routes/properties.index'
 import { Route as PropertiesUlpinRouteImport } from './routes/properties.$ulpin'
 
@@ -42,6 +43,11 @@ const SearchRoute = SearchRouteImport.update({
   path: '/search',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SettingsRoute = SettingsRouteImport.update({
+  id: '/settings',
+  path: '/settings',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PropertiesIndexRoute = PropertiesIndexRouteImport.update({
   id: '/properties/',
   path: '/properties/',
@@ -59,6 +65,7 @@ export interface FileRoutesByFullPath {
   '/analytics': typeof AnalyticsRoute
   '/map': typeof MapRoute
   '/search': typeof SearchRoute
+  '/settings': typeof SettingsRoute
   '/properties/$ulpin': typeof PropertiesUlpinRoute
   '/properties/': typeof PropertiesIndexRoute
 }
@@ -68,6 +75,7 @@ export interface FileRoutesByTo {
   '/analytics': typeof AnalyticsRoute
   '/map': typeof MapRoute
   '/search': typeof SearchRoute
+  '/settings': typeof SettingsRoute
   '/properties/$ulpin': typeof PropertiesUlpinRoute
   '/properties': typeof PropertiesIndexRoute
 }
@@ -78,6 +86,7 @@ export interface FileRoutesById {
   '/analytics': typeof AnalyticsRoute
   '/map': typeof MapRoute
   '/search': typeof SearchRoute
+  '/settings': typeof SettingsRoute
   '/properties/$ulpin': typeof PropertiesUlpinRoute
   '/properties/': typeof PropertiesIndexRoute
 }
@@ -89,6 +98,7 @@ export interface FileRouteTypes {
     | '/analytics'
     | '/map'
     | '/search'
+    | '/settings'
     | '/properties/$ulpin'
     | '/properties/'
   fileRoutesByTo: FileRoutesByTo
@@ -98,6 +108,7 @@ export interface FileRouteTypes {
     | '/analytics'
     | '/map'
     | '/search'
+    | '/settings'
     | '/properties/$ulpin'
     | '/properties'
   id:
@@ -107,6 +118,7 @@ export interface FileRouteTypes {
     | '/analytics'
     | '/map'
     | '/search'
+    | '/settings'
     | '/properties/$ulpin'
     | '/properties/'
   fileRoutesById: FileRoutesById
@@ -117,6 +129,7 @@ export interface RootRouteChildren {
   AnalyticsRoute: typeof AnalyticsRoute
   MapRoute: typeof MapRoute
   SearchRoute: typeof SearchRoute
+  SettingsRoute: typeof SettingsRoute
   PropertiesUlpinRoute: typeof PropertiesUlpinRoute
   PropertiesIndexRoute: typeof PropertiesIndexRoute
 }
@@ -158,6 +171,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SearchRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/settings': {
+      id: '/settings'
+      path: '/settings'
+      fullPath: '/settings'
+      preLoaderRoute: typeof SettingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/properties/': {
       id: '/properties/'
       path: '/properties'
@@ -181,6 +201,7 @@ const rootRouteChildren: RootRouteChildren = {
   AnalyticsRoute: AnalyticsRoute,
   MapRoute: MapRoute,
   SearchRoute: SearchRoute,
+  SettingsRoute: SettingsRoute,
   PropertiesUlpinRoute: PropertiesUlpinRoute,
   PropertiesIndexRoute: PropertiesIndexRoute,
 }
