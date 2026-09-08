@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AddRouteImport } from './routes/add'
 import { Route as MapRouteImport } from './routes/map'
+import { Route as SearchRouteImport } from './routes/search'
 import { Route as PropertiesIndexRouteImport } from './routes/properties.index'
 import { Route as PropertiesUlpinRouteImport } from './routes/properties.$ulpin'
 
@@ -30,6 +31,11 @@ const MapRoute = MapRouteImport.update({
   path: '/map',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SearchRoute = SearchRouteImport.update({
+  id: '/search',
+  path: '/search',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PropertiesIndexRoute = PropertiesIndexRouteImport.update({
   id: '/properties/',
   path: '/properties/',
@@ -45,6 +51,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/add': typeof AddRoute
   '/map': typeof MapRoute
+  '/search': typeof SearchRoute
   '/properties/$ulpin': typeof PropertiesUlpinRoute
   '/properties/': typeof PropertiesIndexRoute
 }
@@ -52,6 +59,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/add': typeof AddRoute
   '/map': typeof MapRoute
+  '/search': typeof SearchRoute
   '/properties/$ulpin': typeof PropertiesUlpinRoute
   '/properties': typeof PropertiesIndexRoute
 }
@@ -60,21 +68,31 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/add': typeof AddRoute
   '/map': typeof MapRoute
+  '/search': typeof SearchRoute
   '/properties/$ulpin': typeof PropertiesUlpinRoute
   '/properties/': typeof PropertiesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/add' | '/map' | '/properties/$ulpin' | '/properties/'
+  fullPaths:
+    '/' | '/add' | '/map' | '/search' | '/properties/$ulpin' | '/properties/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/add' | '/map' | '/properties/$ulpin' | '/properties'
-  id: '__root__' | '/' | '/add' | '/map' | '/properties/$ulpin' | '/properties/'
+  to: '/' | '/add' | '/map' | '/search' | '/properties/$ulpin' | '/properties'
+  id:
+    | '__root__'
+    | '/'
+    | '/add'
+    | '/map'
+    | '/search'
+    | '/properties/$ulpin'
+    | '/properties/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AddRoute: typeof AddRoute
   MapRoute: typeof MapRoute
+  SearchRoute: typeof SearchRoute
   PropertiesUlpinRoute: typeof PropertiesUlpinRoute
   PropertiesIndexRoute: typeof PropertiesIndexRoute
 }
@@ -102,6 +120,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MapRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/search': {
+      id: '/search'
+      path: '/search'
+      fullPath: '/search'
+      preLoaderRoute: typeof SearchRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/properties/': {
       id: '/properties/'
       path: '/properties'
@@ -123,6 +148,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AddRoute: AddRoute,
   MapRoute: MapRoute,
+  SearchRoute: SearchRoute,
   PropertiesUlpinRoute: PropertiesUlpinRoute,
   PropertiesIndexRoute: PropertiesIndexRoute,
 }
