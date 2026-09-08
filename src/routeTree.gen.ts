@@ -10,33 +10,141 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AddRouteImport } from './routes/add'
+import { Route as AnalyticsRouteImport } from './routes/analytics'
+import { Route as HelpRouteImport } from './routes/help'
+import { Route as MapRouteImport } from './routes/map'
+import { Route as SearchRouteImport } from './routes/search'
+import { Route as SettingsRouteImport } from './routes/settings'
+import { Route as PropertiesIndexRouteImport } from './routes/properties.index'
+import { Route as PropertiesUlpinRouteImport } from './routes/properties.$ulpin'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AddRoute = AddRouteImport.update({
+  id: '/add',
+  path: '/add',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AnalyticsRoute = AnalyticsRouteImport.update({
+  id: '/analytics',
+  path: '/analytics',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HelpRoute = HelpRouteImport.update({
+  id: '/help',
+  path: '/help',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MapRoute = MapRouteImport.update({
+  id: '/map',
+  path: '/map',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SearchRoute = SearchRouteImport.update({
+  id: '/search',
+  path: '/search',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SettingsRoute = SettingsRouteImport.update({
+  id: '/settings',
+  path: '/settings',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PropertiesIndexRoute = PropertiesIndexRouteImport.update({
+  id: '/properties/',
+  path: '/properties/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PropertiesUlpinRoute = PropertiesUlpinRouteImport.update({
+  id: '/properties/$ulpin',
+  path: '/properties/$ulpin',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/add': typeof AddRoute
+  '/analytics': typeof AnalyticsRoute
+  '/help': typeof HelpRoute
+  '/map': typeof MapRoute
+  '/search': typeof SearchRoute
+  '/settings': typeof SettingsRoute
+  '/properties/$ulpin': typeof PropertiesUlpinRoute
+  '/properties/': typeof PropertiesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/add': typeof AddRoute
+  '/analytics': typeof AnalyticsRoute
+  '/help': typeof HelpRoute
+  '/map': typeof MapRoute
+  '/search': typeof SearchRoute
+  '/settings': typeof SettingsRoute
+  '/properties/$ulpin': typeof PropertiesUlpinRoute
+  '/properties': typeof PropertiesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/add': typeof AddRoute
+  '/analytics': typeof AnalyticsRoute
+  '/help': typeof HelpRoute
+  '/map': typeof MapRoute
+  '/search': typeof SearchRoute
+  '/settings': typeof SettingsRoute
+  '/properties/$ulpin': typeof PropertiesUlpinRoute
+  '/properties/': typeof PropertiesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/add'
+    | '/analytics'
+    | '/help'
+    | '/map'
+    | '/search'
+    | '/settings'
+    | '/properties/$ulpin'
+    | '/properties/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/add'
+    | '/analytics'
+    | '/help'
+    | '/map'
+    | '/search'
+    | '/settings'
+    | '/properties/$ulpin'
+    | '/properties'
+  id:
+    | '__root__'
+    | '/'
+    | '/add'
+    | '/analytics'
+    | '/help'
+    | '/map'
+    | '/search'
+    | '/settings'
+    | '/properties/$ulpin'
+    | '/properties/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AddRoute: typeof AddRoute
+  AnalyticsRoute: typeof AnalyticsRoute
+  HelpRoute: typeof HelpRoute
+  MapRoute: typeof MapRoute
+  SearchRoute: typeof SearchRoute
+  SettingsRoute: typeof SettingsRoute
+  PropertiesUlpinRoute: typeof PropertiesUlpinRoute
+  PropertiesIndexRoute: typeof PropertiesIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +156,75 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/add': {
+      id: '/add'
+      path: '/add'
+      fullPath: '/add'
+      preLoaderRoute: typeof AddRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/analytics': {
+      id: '/analytics'
+      path: '/analytics'
+      fullPath: '/analytics'
+      preLoaderRoute: typeof AnalyticsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/help': {
+      id: '/help'
+      path: '/help'
+      fullPath: '/help'
+      preLoaderRoute: typeof HelpRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/map': {
+      id: '/map'
+      path: '/map'
+      fullPath: '/map'
+      preLoaderRoute: typeof MapRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/search': {
+      id: '/search'
+      path: '/search'
+      fullPath: '/search'
+      preLoaderRoute: typeof SearchRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/settings': {
+      id: '/settings'
+      path: '/settings'
+      fullPath: '/settings'
+      preLoaderRoute: typeof SettingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/properties/': {
+      id: '/properties/'
+      path: '/properties'
+      fullPath: '/properties/'
+      preLoaderRoute: typeof PropertiesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/properties/$ulpin': {
+      id: '/properties/$ulpin'
+      path: '/properties/$ulpin'
+      fullPath: '/properties/$ulpin'
+      preLoaderRoute: typeof PropertiesUlpinRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AddRoute: AddRoute,
+  AnalyticsRoute: AnalyticsRoute,
+  HelpRoute: HelpRoute,
+  MapRoute: MapRoute,
+  SearchRoute: SearchRoute,
+  SettingsRoute: SettingsRoute,
+  PropertiesUlpinRoute: PropertiesUlpinRoute,
+  PropertiesIndexRoute: PropertiesIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
