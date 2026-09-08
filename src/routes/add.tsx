@@ -69,7 +69,7 @@ function Field({
 }: {
   id: string;
   label: string;
-  error?: string;
+  error?: string | undefined;
   children: React.ReactNode;
 }) {
   return (
@@ -154,16 +154,16 @@ function AddProperty() {
         <section className="rounded-xl border border-border bg-card p-5 shadow-sm md:p-6">
           <h2 className="text-lg font-semibold text-foreground">Section A — Land Details</h2>
           <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-            <Field id="plotNumber" label="Plot Number" error={errors.plotNumber}>
+            <Field id="plotNumber" label="Plot Number" error={errors['plotNumber']}>
               <Input id="plotNumber" placeholder="P-001" value={form.plotNumber} onChange={set("plotNumber")} />
             </Field>
-            <Field id="latitude" label="Latitude" error={errors.latitude}>
+            <Field id="latitude" label="Latitude" error={errors['latitude']}>
               <Input id="latitude" placeholder="28.6139" value={form.latitude} onChange={set("latitude")} />
             </Field>
-            <Field id="longitude" label="Longitude" error={errors.longitude}>
+            <Field id="longitude" label="Longitude" error={errors['longitude']}>
               <Input id="longitude" placeholder="77.2090" value={form.longitude} onChange={set("longitude")} />
             </Field>
-            <Field id="plotArea" label="Plot Area (sq.ft)" error={errors.plotArea}>
+            <Field id="plotArea" label="Plot Area (sq.ft)" error={errors['plotArea']}>
               <Input id="plotArea" placeholder="2400" value={form.plotArea} onChange={set("plotArea")} />
             </Field>
             <Field id="landType" label="Land Type">
@@ -187,13 +187,13 @@ function AddProperty() {
         <section className="rounded-xl border border-border bg-card p-5 shadow-sm md:p-6">
           <h2 className="text-lg font-semibold text-foreground">Section B — Building Details</h2>
           <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            <Field id="height" label="Building Height (m)" error={errors.height}>
+            <Field id="height" label="Building Height (m)" error={errors['height']}>
               <Input id="height" placeholder="15" value={form.height} onChange={set("height")} />
             </Field>
-            <Field id="floors" label="Number of Floors" error={errors.floors}>
+            <Field id="floors" label="Number of Floors" error={errors['floors']}>
               <Input id="floors" placeholder="4" value={form.floors} onChange={set("floors")} />
             </Field>
-            <Field id="unitsPerFloor" label="Units per Floor" error={errors.unitsPerFloor}>
+            <Field id="unitsPerFloor" label="Units per Floor" error={errors['unitsPerFloor']}>
               <Input
                 id="unitsPerFloor"
                 placeholder="2"

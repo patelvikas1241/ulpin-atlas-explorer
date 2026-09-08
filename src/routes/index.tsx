@@ -84,7 +84,7 @@ function Dashboard() {
         actions={
           <>
             <Button asChild>
-              <Link to="/map">
+              <Link to="/map" search={{ ulpin: undefined }}>
                 <Box className="size-4" /> Open 3D Map
               </Link>
             </Button>
@@ -110,7 +110,7 @@ function Dashboard() {
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Button asChild variant="secondary">
-              <Link to="/map">Explore 3D Map</Link>
+              <Link to="/map" search={{ ulpin: undefined }}>Explore 3D Map</Link>
             </Button>
             <Button
               asChild

@@ -11,7 +11,7 @@ import { StatusBadge } from "./index";
 export const Route = createFileRoute("/map")({
   ssr: false,
   validateSearch: (s: Record<string, unknown>) => ({
-    ulpin: typeof s.ulpin === "string" ? s.ulpin : undefined,
+    ulpin: typeof s['ulpin'] === "string" ? (s['ulpin'] as string) : undefined,
   }),
   head: () => ({
     meta: [
