@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as AddRouteImport } from './routes/add'
 import { Route as MapRouteImport } from './routes/map'
 import { Route as PropertiesIndexRouteImport } from './routes/properties.index'
+import { Route as PropertiesUlpinRouteImport } from './routes/properties.$ulpin'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -34,17 +35,24 @@ const PropertiesIndexRoute = PropertiesIndexRouteImport.update({
   path: '/properties/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PropertiesUlpinRoute = PropertiesUlpinRouteImport.update({
+  id: '/properties/$ulpin',
+  path: '/properties/$ulpin',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/add': typeof AddRoute
   '/map': typeof MapRoute
+  '/properties/$ulpin': typeof PropertiesUlpinRoute
   '/properties/': typeof PropertiesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/add': typeof AddRoute
   '/map': typeof MapRoute
+  '/properties/$ulpin': typeof PropertiesUlpinRoute
   '/properties': typeof PropertiesIndexRoute
 }
 export interface FileRoutesById {
@@ -52,20 +60,22 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/add': typeof AddRoute
   '/map': typeof MapRoute
+  '/properties/$ulpin': typeof PropertiesUlpinRoute
   '/properties/': typeof PropertiesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/add' | '/map' | '/properties/'
+  fullPaths: '/' | '/add' | '/map' | '/properties/$ulpin' | '/properties/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/add' | '/map' | '/properties'
-  id: '__root__' | '/' | '/add' | '/map' | '/properties/'
+  to: '/' | '/add' | '/map' | '/properties/$ulpin' | '/properties'
+  id: '__root__' | '/' | '/add' | '/map' | '/properties/$ulpin' | '/properties/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AddRoute: typeof AddRoute
   MapRoute: typeof MapRoute
+  PropertiesUlpinRoute: typeof PropertiesUlpinRoute
   PropertiesIndexRoute: typeof PropertiesIndexRoute
 }
 
@@ -99,6 +109,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PropertiesIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/properties/$ulpin': {
+      id: '/properties/$ulpin'
+      path: '/properties/$ulpin'
+      fullPath: '/properties/$ulpin'
+      preLoaderRoute: typeof PropertiesUlpinRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -106,6 +123,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AddRoute: AddRoute,
   MapRoute: MapRoute,
+  PropertiesUlpinRoute: PropertiesUlpinRoute,
   PropertiesIndexRoute: PropertiesIndexRoute,
 }
 export const routeTree = rootRouteImport
