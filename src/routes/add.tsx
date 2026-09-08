@@ -94,21 +94,21 @@ function AddProperty() {
 
   function validate() {
     const e: Record<string, string> = {};
-    if (!form.plotNumber.trim()) e.plotNumber = "Please enter a plot number.";
-    if (!form.latitude.trim()) e.latitude = "Please enter latitude.";
+    if (!form.plotNumber.trim()) e['plotNumber'] = "Please enter a plot number.";
+    if (!form.latitude.trim()) e['latitude'] = "Please enter latitude.";
     else if (Number.isNaN(Number(form.latitude)) || Math.abs(Number(form.latitude)) > 90)
-      e.latitude = "Latitude must be a number between -90 and 90.";
-    if (!form.longitude.trim()) e.longitude = "Please enter longitude.";
+      e['latitude'] = "Latitude must be a number between -90 and 90.";
+    if (!form.longitude.trim()) e['longitude'] = "Please enter longitude.";
     else if (Number.isNaN(Number(form.longitude)) || Math.abs(Number(form.longitude)) > 180)
-      e.longitude = "Longitude must be a number between -180 and 180.";
+      e['longitude'] = "Longitude must be a number between -180 and 180.";
     if (!form.plotArea.trim() || Number(form.plotArea) <= 0)
-      e.plotArea = "Plot area must be greater than 0.";
+      e['plotArea'] = "Plot area must be greater than 0.";
     if (!form.height.trim() || Number(form.height) <= 0)
-      e.height = "Building height must be greater than 0.";
+      e['height'] = "Building height must be greater than 0.";
     if (!form.floors.trim() || Number(form.floors) <= 0)
-      e.floors = "Number of floors must be greater than 0.";
+      e['floors'] = "Number of floors must be greater than 0.";
     if (!form.unitsPerFloor.trim() || Number(form.unitsPerFloor) <= 0)
-      e.unitsPerFloor = "Units per floor must be greater than 0.";
+      e['unitsPerFloor'] = "Units per floor must be greater than 0.";
     setErrors(e);
     return Object.keys(e).length === 0;
   }

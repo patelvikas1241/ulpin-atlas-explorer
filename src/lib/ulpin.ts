@@ -44,7 +44,7 @@ const slots: Array<[number, number]> = [
 ];
 
 export function nextSlot(count: number): [number, number] {
-  return slots[count % slots.length];
+  return slots[count % slots.length] ?? [0, 0];
 }
 
 export const demoProperties: Property[] = [

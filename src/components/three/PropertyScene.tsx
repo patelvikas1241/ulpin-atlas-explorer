@@ -18,8 +18,8 @@ function FloorStack({
   property: Property;
   selected: boolean;
   activeFloor: number | null;
-  onSelect?: () => void;
-  onFloor?: (f: number) => void;
+  onSelect?: (() => void) | undefined;
+  onFloor?: ((f: number) => void) | undefined;
   position: [number, number, number];
 }) {
   const w = PLOT * 0.62;
@@ -112,11 +112,11 @@ export default function PropertyScene({
   single = false,
 }: {
   properties: Property[];
-  selectedId?: string | null;
-  activeFloor?: number | null;
-  onSelect?: (id: string) => void;
-  onFloor?: (f: number) => void;
-  single?: boolean;
+  selectedId?: string | null | undefined;
+  activeFloor?: number | null | undefined;
+  onSelect?: ((id: string) => void) | undefined;
+  onFloor?: ((f: number) => void) | undefined;
+  single?: boolean | undefined;
 }) {
   return (
     <Canvas

@@ -5,12 +5,12 @@ const PropertyScene = React.lazy(() => import("./three/PropertyScene"));
 
 type Props = {
   properties: Property[];
-  selectedId?: string | null;
-  activeFloor?: number | null;
-  onSelect?: (id: string) => void;
-  onFloor?: (f: number) => void;
-  single?: boolean;
-  className?: string;
+  selectedId?: string | null | undefined;
+  activeFloor?: number | null | undefined;
+  onSelect?: ((id: string) => void) | undefined;
+  onFloor?: ((f: number) => void) | undefined;
+  single?: boolean | undefined;
+  className?: string | undefined;
 };
 
 export function ClientScene({ className, ...rest }: Props) {
