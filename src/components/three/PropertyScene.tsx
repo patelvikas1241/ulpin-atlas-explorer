@@ -1,4 +1,5 @@
 import * as React from "react";
+import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment, Lightformer, Html } from "@react-three/drei";
 import type { Property } from "@/lib/ulpin";
@@ -30,7 +31,7 @@ function FloorStack({
         <meshStandardMaterial color={selected ? "#c7d7f5" : "#d9dde5"} />
       </mesh>
       <lineSegments position={[0, 0.02, 0]} rotation-x={-Math.PI / 2}>
-        <edgesGeometry args={[new THREEPlane(PLOT)]} />
+        <edgesGeometry args={[new THREE.PlaneGeometry(PLOT, PLOT)]} />
         <lineBasicMaterial color={selected ? "#2f5fd0" : "#9aa4b5"} />
       </lineSegments>
 
@@ -76,20 +77,7 @@ function FloorStack({
   );
 }
 
-// small helper to build a square outline geometry
-class THREEPlane {
-  constructor(size: number) {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const { PlaneGeometry } = require_three();
-    return new PlaneGeometry(size, size) as unknown as THREEPlane;
-  }
-}
-function require_three() {
-  // three is bundled; import lazily to keep class helper simple
-  // eslint-disable-next-line @typescript-eslint/no-require-imports, @typescript-eslint/no-var-requires
-  return threeNs;
-}
-import * as threeNs from "three";
+
 
 function Ground() {
   return (
