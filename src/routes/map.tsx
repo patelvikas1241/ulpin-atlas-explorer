@@ -3,7 +3,7 @@ import { createFileRoute, Link, useSearch } from "@tanstack/react-router";
 import { Layers, MousePointerClick } from "lucide-react";
 import { useProperties } from "@/lib/property-store";
 import { totalUnits } from "@/lib/ulpin";
-import { ClientScene } from "@/components/ClientScene";
+import { Bhumi3DMapWrapper } from "@/components/Bhumi3DMapWrapper";
 import { Button } from "@/components/ui/button";
 import { PageHeader } from "@/components/AppShell";
 import { StatusBadge } from "./index";
@@ -54,7 +54,7 @@ function MapPage() {
       />
       <div className="grid gap-4 p-5 md:p-8 lg:grid-cols-[1fr_340px]">
         <div className="relative h-[62vh] min-h-[420px] overflow-hidden rounded-xl border border-border bg-card shadow-sm lg:h-[74vh]">
-          <ClientScene
+          <Bhumi3DMapWrapper
             className="h-full w-full"
             properties={properties}
             selectedId={selectedId}
