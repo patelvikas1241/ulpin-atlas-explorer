@@ -1,14 +1,18 @@
-# Welcome to your Lovable project
+# PropertyVerse Explorer
+
+Build the complete responsive “3D ULPIN Property Mapping System” hackathon prototype exactly from the attached specification. Use mock/local data, implement the end-to-end workflow, professional government-tech GIS styling, interactive 3D property visualization, navigation, property registration, validation, ULPIN generation, search, analytics, and responsive UI.
 
 This project was built with [Lovable](https://lovable.dev).
 
+**Live app**: https://ulpin-atlas-explorer.lovable.app
+
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/fdf05746-6354-4eca-bf97-a79f4cacc726).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +24,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
