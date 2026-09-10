@@ -1,0 +1,1058 @@
+[
+  {
+    "parcelId": "GGM-PCL-001",
+    "buildingId": "GGM-BLD-001",
+    "ulpinBase": "IN-HR-GGM-001-P001-B01",
+    "ulpin": "IN-HR-GGM-001-P001-B01-F01-U101",
+    "sector": "Cyber City",
+    "buildingName": "Aravalli Heights",
+    "latitude": 28.496452,
+    "longitude": 77.087548,
+    "height": 62,
+    "floors": 17,
+    "unitsPerFloor": 7,
+    "units": 119,
+    "propertyType": "Commercial",
+    "area": 2023,
+    "builtUpArea": 173331,
+    "owner": "Meridian Estates Pvt Ltd",
+    "registryDate": "2023-09-23",
+    "landValue": 195.2,
+    "status": "Prototype Data",
+    "recordStatus": "Pending",
+    "parcelPolygon": [
+      [
+        77.086729,
+        28.49595
+      ],
+      [
+        77.088367,
+        28.49595
+      ],
+      [
+        77.088367,
+        28.496954
+      ],
+      [
+        77.086729,
+        28.496954
+      ],
+      [
+        77.086729,
+        28.49595
+      ]
+    ]
+  },
+  {
+    "parcelId": "GGM-PCL-002",
+    "buildingId": "GGM-BLD-002",
+    "ulpinBase": "IN-HR-GGM-002-P002-B01",
+    "ulpin": "IN-HR-GGM-002-P002-B01-F01-U101",
+    "sector": "MG Road",
+    "buildingName": "Cyber Crest",
+    "latitude": 28.482439,
+    "longitude": 77.084122,
+    "height": 58,
+    "floors": 16,
+    "unitsPerFloor": 4,
+    "units": 64,
+    "propertyType": "Mixed Use",
+    "area": 1176,
+    "builtUpArea": 54190,
+    "owner": "Anand Sharma",
+    "registryDate": "2022-02-13",
+    "landValue": 193.1,
+    "status": "Prototype Data",
+    "recordStatus": "Pending",
+    "parcelPolygon": [
+      [
+        77.083257,
+        28.481728
+      ],
+      [
+        77.084987,
+        28.481728
+      ],
+      [
+        77.084987,
+        28.48315
+      ],
+      [
+        77.083257,
+        28.48315
+      ],
+      [
+        77.083257,
+        28.481728
+      ]
+    ]
+  },
+  {
+    "parcelId": "GGM-PCL-003",
+    "buildingId": "GGM-BLD-003",
+    "ulpinBase": "IN-HR-GGM-003-P003-B01",
+    "ulpin": "IN-HR-GGM-003-P003-B01-F01-U101",
+    "sector": "Golf Course Road",
+    "buildingName": "Sapphire Plaza",
+    "latitude": 28.449793,
+    "longitude": 77.099683,
+    "height": 86,
+    "floors": 24,
+    "unitsPerFloor": 4,
+    "units": 96,
+    "propertyType": "Residential",
+    "area": 1555,
+    "builtUpArea": 107482,
+    "owner": "Sikanderpur Retail LLP",
+    "registryDate": "2012-02-09",
+    "landValue": 101,
+    "status": "Prototype Data",
+    "recordStatus": "Pending",
+    "parcelPolygon": [
+      [
+        77.098962,
+        28.449097
+      ],
+      [
+        77.100404,
+        28.449097
+      ],
+      [
+        77.100404,
+        28.450489
+      ],
+      [
+        77.098962,
+        28.450489
+      ],
+      [
+        77.098962,
+        28.449097
+      ]
+    ]
+  },
+  {
+    "parcelId": "GGM-PCL-004",
+    "buildingId": "GGM-BLD-004",
+    "ulpinBase": "IN-HR-GGM-004-P004-B01",
+    "ulpin": "IN-HR-GGM-004-P004-B01-F01-U101",
+    "sector": "Sector 29",
+    "buildingName": "Meridian Towers",
+    "latitude": 28.47143,
+    "longitude": 77.066575,
+    "height": 72,
+    "floors": 20,
+    "unitsPerFloor": 4,
+    "units": 80,
+    "propertyType": "Commercial",
+    "area": 1585,
+    "builtUpArea": 91296,
+    "owner": "HSVP (simulated)",
+    "registryDate": "2014-07-23",
+    "landValue": 185.1,
+    "status": "Prototype Data",
+    "recordStatus": "Verified",
+    "parcelPolygon": [
+      [
+        77.065676,
+        28.470734
+      ],
+      [
+        77.067474,
+        28.470734
+      ],
+      [
+        77.067474,
+        28.472126
+      ],
+      [
+        77.065676,
+        28.472126
+      ],
+      [
+        77.065676,
+        28.470734
+      ]
+    ]
+  },
+  {
+    "parcelId": "GGM-PCL-005",
+    "buildingId": "GGM-BLD-005",
+    "ulpinBase": "IN-HR-GGM-005-P005-B01",
+    "ulpin": "IN-HR-GGM-005-P005-B01-F01-U101",
+    "sector": "Sector 44",
+    "buildingName": "Bhumi Business Park",
+    "latitude": 28.450992,
+    "longitude": 77.067421,
+    "height": 69,
+    "floors": 19,
+    "unitsPerFloor": 4,
+    "units": 76,
+    "propertyType": "Commercial",
+    "area": 2059,
+    "builtUpArea": 112668,
+    "owner": "Aravalli Holdings",
+    "registryDate": "2016-06-26",
+    "landValue": 114.9,
+    "status": "Prototype Data",
+    "recordStatus": "Verified",
+    "parcelPolygon": [
+      [
+        77.066769,
+        28.450427
+      ],
+      [
+        77.068073,
+        28.450427
+      ],
+      [
+        77.068073,
+        28.451557
+      ],
+      [
+        77.066769,
+        28.451557
+      ],
+      [
+        77.066769,
+        28.450427
+      ]
+    ]
+  },
+  {
+    "parcelId": "GGM-PCL-006",
+    "buildingId": "GGM-BLD-006",
+    "ulpinBase": "IN-HR-GGM-006-P006-B01",
+    "ulpin": "IN-HR-GGM-006-P006-B01-F01-U101",
+    "sector": "Sector 45",
+    "buildingName": "Galleria Square",
+    "latitude": 28.439819,
+    "longitude": 77.060829,
+    "height": 65,
+    "floors": 18,
+    "unitsPerFloor": 2,
+    "units": 36,
+    "propertyType": "Residential",
+    "area": 1315,
+    "builtUpArea": 34085,
+    "owner": "Rekha Malhotra",
+    "registryDate": "2013-10-13",
+    "landValue": 142.9,
+    "status": "Prototype Data",
+    "recordStatus": "Draft",
+    "parcelPolygon": [
+      [
+        77.060167,
+        28.439244
+      ],
+      [
+        77.061491,
+        28.439244
+      ],
+      [
+        77.061491,
+        28.440394
+      ],
+      [
+        77.060167,
+        28.440394
+      ],
+      [
+        77.060167,
+        28.439244
+      ]
+    ]
+  },
+  {
+    "parcelId": "GGM-PCL-007",
+    "buildingId": "GGM-BLD-007",
+    "ulpinBase": "IN-HR-GGM-007-P007-B01",
+    "ulpin": "IN-HR-GGM-007-P007-B01-F01-U101",
+    "sector": "Sector 56",
+    "buildingName": "Orchid Residency",
+    "latitude": 28.438333,
+    "longitude": 77.101294,
+    "height": 18,
+    "floors": 4,
+    "unitsPerFloor": 3,
+    "units": 12,
+    "propertyType": "Residential",
+    "area": 1608,
+    "builtUpArea": 13893,
+    "owner": "Southcity Developers",
+    "registryDate": "2014-06-26",
+    "landValue": 55.4,
+    "status": "Prototype Data",
+    "recordStatus": "Pending",
+    "parcelPolygon": [
+      [
+        77.10054,
+        28.437684
+      ],
+      [
+        77.102048,
+        28.437684
+      ],
+      [
+        77.102048,
+        28.438982
+      ],
+      [
+        77.10054,
+        28.438982
+      ],
+      [
+        77.10054,
+        28.437684
+      ]
+    ]
+  },
+  {
+    "parcelId": "GGM-PCL-008",
+    "buildingId": "GGM-BLD-008",
+    "ulpinBase": "IN-HR-GGM-008-P008-B01",
+    "ulpin": "IN-HR-GGM-008-P008-B01-F01-U101",
+    "sector": "Sector 57",
+    "buildingName": "Trinity Corporate",
+    "latitude": 28.425063,
+    "longitude": 77.082096,
+    "height": 18,
+    "floors": 4,
+    "unitsPerFloor": 6,
+    "units": 24,
+    "propertyType": "Mixed Use",
+    "area": 1968,
+    "builtUpArea": 34007,
+    "owner": "Vikram Chauhan",
+    "registryDate": "2020-04-22",
+    "landValue": 261.8,
+    "status": "Prototype Data",
+    "recordStatus": "Pending",
+    "parcelPolygon": [
+      [
+        77.081386,
+        28.424372
+      ],
+      [
+        77.082806,
+        28.424372
+      ],
+      [
+        77.082806,
+        28.425754
+      ],
+      [
+        77.081386,
+        28.425754
+      ],
+      [
+        77.081386,
+        28.424372
+      ]
+    ]
+  },
+  {
+    "parcelId": "GGM-PCL-009",
+    "buildingId": "GGM-BLD-009",
+    "ulpinBase": "IN-HR-GGM-009-P009-B01",
+    "ulpin": "IN-HR-GGM-009-P009-B01-F01-U101",
+    "sector": "Udyog Vihar",
+    "buildingName": "Silver Oak Enclave",
+    "latitude": 28.498403,
+    "longitude": 77.08609,
+    "height": 21,
+    "floors": 5,
+    "unitsPerFloor": 7,
+    "units": 35,
+    "propertyType": "Industrial",
+    "area": 1830,
+    "builtUpArea": 46116,
+    "owner": "Cyber Ridge Holdings",
+    "registryDate": "2024-02-07",
+    "landValue": 120.8,
+    "status": "Prototype Data",
+    "recordStatus": "Draft",
+    "parcelPolygon": [
+      [
+        77.085263,
+        28.497927
+      ],
+      [
+        77.086917,
+        28.497927
+      ],
+      [
+        77.086917,
+        28.498879
+      ],
+      [
+        77.085263,
+        28.498879
+      ],
+      [
+        77.085263,
+        28.497927
+      ]
+    ]
+  },
+  {
+    "parcelId": "GGM-PCL-010",
+    "buildingId": "GGM-BLD-010",
+    "ulpinBase": "IN-HR-GGM-001-P010-B01",
+    "ulpin": "IN-HR-GGM-001-P010-B01-F01-U101",
+    "sector": "Cyber City",
+    "buildingName": "Vatika Vista",
+    "latitude": 28.492998,
+    "longitude": 77.093108,
+    "height": 75,
+    "floors": 21,
+    "unitsPerFloor": 5,
+    "units": 105,
+    "propertyType": "Commercial",
+    "area": 1574,
+    "builtUpArea": 118994,
+    "owner": "Sunita Yadav",
+    "registryDate": "2020-10-22",
+    "landValue": 262.3,
+    "status": "Prototype Data",
+    "recordStatus": "Pending",
+    "parcelPolygon": [
+      [
+        77.092554,
+        28.492451
+      ],
+      [
+        77.093662,
+        28.492451
+      ],
+      [
+        77.093662,
+        28.493545
+      ],
+      [
+        77.092554,
+        28.493545
+      ],
+      [
+        77.092554,
+        28.492451
+      ]
+    ]
+  },
+  {
+    "parcelId": "GGM-PCL-011",
+    "buildingId": "GGM-BLD-011",
+    "ulpinBase": "IN-HR-GGM-002-P011-B01",
+    "ulpin": "IN-HR-GGM-002-P011-B01-F01-U101",
+    "sector": "MG Road",
+    "buildingName": "Skyline Arcade",
+    "latitude": 28.483099,
+    "longitude": 77.085273,
+    "height": 35,
+    "floors": 9,
+    "unitsPerFloor": 5,
+    "units": 45,
+    "propertyType": "Mixed Use",
+    "area": 1965,
+    "builtUpArea": 63666,
+    "owner": "Galleria Commercial Trust",
+    "registryDate": "2017-08-25",
+    "landValue": 180.4,
+    "status": "Prototype Data",
+    "recordStatus": "Verified",
+    "parcelPolygon": [
+      [
+        77.084449,
+        28.482447
+      ],
+      [
+        77.086097,
+        28.482447
+      ],
+      [
+        77.086097,
+        28.483751
+      ],
+      [
+        77.084449,
+        28.483751
+      ],
+      [
+        77.084449,
+        28.482447
+      ]
+    ]
+  },
+  {
+    "parcelId": "GGM-PCL-012",
+    "buildingId": "GGM-BLD-012",
+    "ulpinBase": "IN-HR-GGM-003-P012-B01",
+    "ulpin": "IN-HR-GGM-003-P012-B01-F01-U101",
+    "sector": "Golf Course Road",
+    "buildingName": "Emerald Court",
+    "latitude": 28.452697,
+    "longitude": 77.09813,
+    "height": 48,
+    "floors": 13,
+    "unitsPerFloor": 2,
+    "units": 26,
+    "propertyType": "Residential",
+    "area": 2033,
+    "builtUpArea": 38058,
+    "owner": "Precision Components India",
+    "registryDate": "2013-04-04",
+    "landValue": 144.2,
+    "status": "Prototype Data",
+    "recordStatus": "Draft",
+    "parcelPolygon": [
+      [
+        77.097438,
+        28.452134
+      ],
+      [
+        77.098822,
+        28.452134
+      ],
+      [
+        77.098822,
+        28.45326
+      ],
+      [
+        77.097438,
+        28.45326
+      ],
+      [
+        77.097438,
+        28.452134
+      ]
+    ]
+  },
+  {
+    "parcelId": "GGM-PCL-013",
+    "buildingId": "GGM-BLD-013",
+    "ulpinBase": "IN-HR-GGM-004-P013-B01",
+    "ulpin": "IN-HR-GGM-004-P013-B01-F01-U101",
+    "sector": "Sector 29",
+    "buildingName": "Unitech Signature",
+    "latitude": 28.468706,
+    "longitude": 77.067081,
+    "height": 75,
+    "floors": 21,
+    "unitsPerFloor": 2,
+    "units": 42,
+    "propertyType": "Residential",
+    "area": 1660,
+    "builtUpArea": 50198,
+    "owner": "Meridian Estates Pvt Ltd",
+    "registryDate": "2023-05-01",
+    "landValue": 161.3,
+    "status": "Prototype Data",
+    "recordStatus": "Pending",
+    "parcelPolygon": [
+      [
+        77.06634,
+        28.468215
+      ],
+      [
+        77.067822,
+        28.468215
+      ],
+      [
+        77.067822,
+        28.469197
+      ],
+      [
+        77.06634,
+        28.469197
+      ],
+      [
+        77.06634,
+        28.468215
+      ]
+    ]
+  },
+  {
+    "parcelId": "GGM-PCL-014",
+    "buildingId": "GGM-BLD-014",
+    "ulpinBase": "IN-HR-GGM-005-P014-B01",
+    "ulpin": "IN-HR-GGM-005-P014-B01-F01-U101",
+    "sector": "Sector 44",
+    "buildingName": "Palm Grove Towers",
+    "latitude": 28.446068,
+    "longitude": 77.067809,
+    "height": 24,
+    "floors": 6,
+    "unitsPerFloor": 6,
+    "units": 36,
+    "propertyType": "Commercial",
+    "area": 2079,
+    "builtUpArea": 53888,
+    "owner": "Anand Sharma",
+    "registryDate": "2013-06-25",
+    "landValue": 84.5,
+    "status": "Prototype Data",
+    "recordStatus": "Verified",
+    "parcelPolygon": [
+      [
+        77.066978,
+        28.445512
+      ],
+      [
+        77.06864,
+        28.445512
+      ],
+      [
+        77.06864,
+        28.446624
+      ],
+      [
+        77.066978,
+        28.446624
+      ],
+      [
+        77.066978,
+        28.445512
+      ]
+    ]
+  },
+  {
+    "parcelId": "GGM-PCL-015",
+    "buildingId": "GGM-BLD-015",
+    "ulpinBase": "IN-HR-GGM-006-P015-B01",
+    "ulpin": "IN-HR-GGM-006-P015-B01-F01-U101",
+    "sector": "Sector 45",
+    "buildingName": "Horizon Tech Park",
+    "latitude": 28.44616,
+    "longitude": 77.063058,
+    "height": 31,
+    "floors": 8,
+    "unitsPerFloor": 2,
+    "units": 16,
+    "propertyType": "Residential",
+    "area": 1847,
+    "builtUpArea": 21277,
+    "owner": "Sikanderpur Retail LLP",
+    "registryDate": "2020-04-23",
+    "landValue": 77.7,
+    "status": "Prototype Data",
+    "recordStatus": "Pending",
+    "parcelPolygon": [
+      [
+        77.062118,
+        28.445634
+      ],
+      [
+        77.063998,
+        28.445634
+      ],
+      [
+        77.063998,
+        28.446686
+      ],
+      [
+        77.062118,
+        28.446686
+      ],
+      [
+        77.062118,
+        28.445634
+      ]
+    ]
+  },
+  {
+    "parcelId": "GGM-PCL-016",
+    "buildingId": "GGM-BLD-016",
+    "ulpinBase": "IN-HR-GGM-007-P016-B01",
+    "ulpin": "IN-HR-GGM-007-P016-B01-F01-U101",
+    "sector": "Sector 56",
+    "buildingName": "Sunrise Apartments",
+    "latitude": 28.439475,
+    "longitude": 77.099556,
+    "height": 69,
+    "floors": 19,
+    "unitsPerFloor": 2,
+    "units": 38,
+    "propertyType": "Residential",
+    "area": 1045,
+    "builtUpArea": 28591,
+    "owner": "HSVP (simulated)",
+    "registryDate": "2011-06-13",
+    "landValue": 98,
+    "status": "Prototype Data",
+    "recordStatus": "Draft",
+    "parcelPolygon": [
+      [
+        77.098698,
+        28.439016
+      ],
+      [
+        77.100414,
+        28.439016
+      ],
+      [
+        77.100414,
+        28.439934
+      ],
+      [
+        77.098698,
+        28.439934
+      ],
+      [
+        77.098698,
+        28.439016
+      ]
+    ]
+  },
+  {
+    "parcelId": "GGM-PCL-017",
+    "buildingId": "GGM-BLD-017",
+    "ulpinBase": "IN-HR-GGM-008-P017-B01",
+    "ulpin": "IN-HR-GGM-008-P017-B01-F01-U101",
+    "sector": "Sector 57",
+    "buildingName": "Nirvana Heights",
+    "latitude": 28.422271,
+    "longitude": 77.08177,
+    "height": 48,
+    "floors": 13,
+    "unitsPerFloor": 5,
+    "units": 65,
+    "propertyType": "Mixed Use",
+    "area": 1863,
+    "builtUpArea": 87188,
+    "owner": "Aravalli Holdings",
+    "registryDate": "2023-08-11",
+    "landValue": 233.2,
+    "status": "Prototype Data",
+    "recordStatus": "Verified",
+    "parcelPolygon": [
+      [
+        77.081095,
+        28.421541
+      ],
+      [
+        77.082445,
+        28.421541
+      ],
+      [
+        77.082445,
+        28.423001
+      ],
+      [
+        77.081095,
+        28.423001
+      ],
+      [
+        77.081095,
+        28.421541
+      ]
+    ]
+  },
+  {
+    "parcelId": "GGM-PCL-018",
+    "buildingId": "GGM-BLD-018",
+    "ulpinBase": "IN-HR-GGM-009-P018-B01",
+    "ulpin": "IN-HR-GGM-009-P018-B01-F01-U101",
+    "sector": "Udyog Vihar",
+    "buildingName": "Crown Commercia",
+    "latitude": 28.496927,
+    "longitude": 77.084434,
+    "height": 21,
+    "floors": 5,
+    "unitsPerFloor": 7,
+    "units": 35,
+    "propertyType": "Industrial",
+    "area": 858,
+    "builtUpArea": 21622,
+    "owner": "Rekha Malhotra",
+    "registryDate": "2012-11-08",
+    "landValue": 251.1,
+    "status": "Prototype Data",
+    "recordStatus": "Draft",
+    "parcelPolygon": [
+      [
+        77.083718,
+        28.496364
+      ],
+      [
+        77.08515,
+        28.496364
+      ],
+      [
+        77.08515,
+        28.49749
+      ],
+      [
+        77.083718,
+        28.49749
+      ],
+      [
+        77.083718,
+        28.496364
+      ]
+    ]
+  },
+  {
+    "parcelId": "GGM-PCL-019",
+    "buildingId": "GGM-BLD-019",
+    "ulpinBase": "IN-HR-GGM-001-P019-B01",
+    "ulpin": "IN-HR-GGM-001-P019-B01-F01-U101",
+    "sector": "Cyber City",
+    "buildingName": "Lotus Business Hub",
+    "latitude": 28.499809,
+    "longitude": 77.092338,
+    "height": 65,
+    "floors": 18,
+    "unitsPerFloor": 7,
+    "units": 126,
+    "propertyType": "Commercial",
+    "area": 1353,
+    "builtUpArea": 122744,
+    "owner": "Southcity Developers",
+    "registryDate": "2019-07-03",
+    "landValue": 239.7,
+    "status": "Prototype Data",
+    "recordStatus": "Draft",
+    "parcelPolygon": [
+      [
+        77.091475,
+        28.499179
+      ],
+      [
+        77.093201,
+        28.499179
+      ],
+      [
+        77.093201,
+        28.500439
+      ],
+      [
+        77.091475,
+        28.500439
+      ],
+      [
+        77.091475,
+        28.499179
+      ]
+    ]
+  },
+  {
+    "parcelId": "GGM-PCL-020",
+    "buildingId": "GGM-BLD-020",
+    "ulpinBase": "IN-HR-GGM-002-P020-B01",
+    "ulpin": "IN-HR-GGM-002-P020-B01-F01-U101",
+    "sector": "MG Road",
+    "buildingName": "Maple Residences",
+    "latitude": 28.474751,
+    "longitude": 77.088762,
+    "height": 79,
+    "floors": 22,
+    "unitsPerFloor": 6,
+    "units": 132,
+    "propertyType": "Mixed Use",
+    "area": 2512,
+    "builtUpArea": 238740,
+    "owner": "Vikram Chauhan",
+    "registryDate": "2013-02-07",
+    "landValue": 239.3,
+    "status": "Prototype Data",
+    "recordStatus": "Draft",
+    "parcelPolygon": [
+      [
+        77.088002,
+        28.474035
+      ],
+      [
+        77.089522,
+        28.474035
+      ],
+      [
+        77.089522,
+        28.475467
+      ],
+      [
+        77.088002,
+        28.475467
+      ],
+      [
+        77.088002,
+        28.474035
+      ]
+    ]
+  },
+  {
+    "parcelId": "GGM-PCL-021",
+    "buildingId": "GGM-BLD-021",
+    "ulpinBase": "IN-HR-GGM-003-P021-B01",
+    "ulpin": "IN-HR-GGM-003-P021-B01-F01-U101",
+    "sector": "Golf Course Road",
+    "buildingName": "Iris Corporate Tower",
+    "latitude": 28.449693,
+    "longitude": 77.099232,
+    "height": 75,
+    "floors": 21,
+    "unitsPerFloor": 4,
+    "units": 84,
+    "propertyType": "Residential",
+    "area": 2066,
+    "builtUpArea": 124952,
+    "owner": "Cyber Ridge Holdings",
+    "registryDate": "2022-10-07",
+    "landValue": 43.1,
+    "status": "Prototype Data",
+    "recordStatus": "Verified",
+    "parcelPolygon": [
+      [
+        77.098602,
+        28.448994
+      ],
+      [
+        77.099862,
+        28.448994
+      ],
+      [
+        77.099862,
+        28.450392
+      ],
+      [
+        77.098602,
+        28.450392
+      ],
+      [
+        77.098602,
+        28.448994
+      ]
+    ]
+  },
+  {
+    "parcelId": "GGM-PCL-022",
+    "buildingId": "GGM-BLD-022",
+    "ulpinBase": "IN-HR-GGM-004-P022-B01",
+    "ulpin": "IN-HR-GGM-004-P022-B01-F01-U101",
+    "sector": "Sector 29",
+    "buildingName": "Willow Court",
+    "latitude": 28.464147,
+    "longitude": 77.065349,
+    "height": 52,
+    "floors": 14,
+    "unitsPerFloor": 3,
+    "units": 42,
+    "propertyType": "Commercial",
+    "area": 1386,
+    "builtUpArea": 41913,
+    "owner": "Sunita Yadav",
+    "registryDate": "2012-01-07",
+    "landValue": 206.1,
+    "status": "Prototype Data",
+    "recordStatus": "Pending",
+    "parcelPolygon": [
+      [
+        77.064549,
+        28.463425
+      ],
+      [
+        77.066149,
+        28.463425
+      ],
+      [
+        77.066149,
+        28.464869
+      ],
+      [
+        77.064549,
+        28.464869
+      ],
+      [
+        77.064549,
+        28.463425
+      ]
+    ]
+  },
+  {
+    "parcelId": "GGM-PCL-023",
+    "buildingId": "GGM-BLD-023",
+    "ulpinBase": "IN-HR-GGM-005-P023-B01",
+    "ulpin": "IN-HR-GGM-005-P023-B01-F01-U101",
+    "sector": "Sector 44",
+    "buildingName": "Zenith Industrial Estate",
+    "latitude": 28.451467,
+    "longitude": 77.072202,
+    "height": 75,
+    "floors": 21,
+    "unitsPerFloor": 5,
+    "units": 105,
+    "propertyType": "Commercial",
+    "area": 1951,
+    "builtUpArea": 147496,
+    "owner": "Galleria Commercial Trust",
+    "registryDate": "2011-08-15",
+    "landValue": 204.7,
+    "status": "Prototype Data",
+    "recordStatus": "Pending",
+    "parcelPolygon": [
+      [
+        77.071403,
+        28.450921
+      ],
+      [
+        77.073001,
+        28.450921
+      ],
+      [
+        77.073001,
+        28.452013
+      ],
+      [
+        77.071403,
+        28.452013
+      ],
+      [
+        77.071403,
+        28.450921
+      ]
+    ]
+  },
+  {
+    "parcelId": "GGM-PCL-024",
+    "buildingId": "GGM-BLD-024",
+    "ulpinBase": "IN-HR-GGM-006-P024-B01",
+    "ulpin": "IN-HR-GGM-006-P024-B01-F01-U101",
+    "sector": "Sector 45",
+    "buildingName": "Sanskriti Homes",
+    "latitude": 28.437737,
+    "longitude": 77.069413,
+    "height": 75,
+    "floors": 21,
+    "unitsPerFloor": 2,
+    "units": 42,
+    "propertyType": "Residential",
+    "area": 1154,
+    "builtUpArea": 34897,
+    "owner": "Precision Components India",
+    "registryDate": "2016-06-27",
+    "landValue": 178.3,
+    "status": "Prototype Data",
+    "recordStatus": "Pending",
+    "parcelPolygon": [
+      [
+        77.068595,
+        28.437008
+      ],
+      [
+        77.070231,
+        28.437008
+      ],
+      [
+        77.070231,
+        28.438466
+      ],
+      [
+        77.068595,
+        28.438466
+      ],
+      [
+        77.068595,
+        28.437008
+      ]
+    ]
+  }
+]
